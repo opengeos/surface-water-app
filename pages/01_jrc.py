@@ -136,7 +136,7 @@ def Page():
         Map.element(
             center=[20, -0],
             zoom=2,
-            height="800px",
+            height="750px",
             zoom_ctrl=False,
             measure_ctrl=False,
         )
