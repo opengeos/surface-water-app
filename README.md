@@ -1,5 +1,5 @@
 ---
-title: Solara Geemap
+title: Surface Water App
 emoji: 🏃
 colorFrom: blue
 colorTo: purple
