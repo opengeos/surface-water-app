@@ -1,5 +1,6 @@
 ffmpeg-python
-geemap
+# geemap
 geopandas
+git+https://github.com/giswqs/geemap
 pydantic< 2.0
 solara
