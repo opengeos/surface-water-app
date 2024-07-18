@@ -1,10 +1,11 @@
 FROM jupyter/base-notebook:latest
 
-RUN apt-get update && apt-get install -y git
 
 RUN mamba install -c conda-forge leafmap geopandas localtileserver -y && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
+
+RUN apt-get update && apt-get install -y git
 
 COPY requirements.txt .
 RUN pip install -r requirements.txt
