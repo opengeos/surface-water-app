@@ -1,3 +1,4 @@
+ffmpeg-python
 geemap
 geopandas
 pydantic< 2.0
