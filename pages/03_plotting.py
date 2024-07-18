@@ -1,7 +1,11 @@
+import os
 import ee
 import geemap
 
 import solara
+
+service_account = os.environ.get("EARTHENGINE_SERVICE_ACCOUNT", False)
+geemap.ee_initialize(service_account=service_account)
 
 
 class Map(geemap.Map):
