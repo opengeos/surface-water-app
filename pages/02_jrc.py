@@ -9,8 +9,7 @@ import solara
 class Map(geemap.Map):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        url = "https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"
-        self.add_tile_layer(url, name="Google Satellite", attribution="Google")
+        self.add_basemap("Esri.WorldImagery")
         self.add_ee_data()
         self.add_buttons(add_header=True)
 
