@@ -257,10 +257,13 @@ class Map(geemap.Map):
                     )
                     output.clear_output()
 
-                    self._draw_control.clear()
-                    draw_layer = self.find_layer("Drawn Features")
-                    if draw_layer is not None:
-                        self.remove(draw_layer)
+                    try:
+                        self._draw_control.clear()
+                        draw_layer = self.find_layer("Drawn Features")
+                        if draw_layer is not None:
+                            self.remove(draw_layer)
+                    except Exception as e:
+                        print(e)
 
         split_btn.on_click(split_btn_click)
 
