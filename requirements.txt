@@ -1,5 +1,5 @@
 ffmpeg-python
-geemap
+geemap==0.35.3
 geopandas
 # git+https://github.com/gee-community/geemap
 pydantic
